@@ -25,7 +25,7 @@
  */
 
 function solution(arr, divisor) {
-    var answer = arr.filter(arr1 => !(arr1%divisor)).sort(function(a,b){return a-b;});
+    var answer = arr.filter(arr1 => !(arr1%divisor)).sort((a,b)=> a-b);
     answer = answer.length > 0? answer:[-1];
     return answer;
 }
